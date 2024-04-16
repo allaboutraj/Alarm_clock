@@ -2,6 +2,8 @@ const currentTime = document.querySelector("h1");
 const selectedMenu = document.querySelectorAll("select");
 const setALarmButton = document.querySelector("button");
 const content = document.querySelector(".content");
+const taskCotainer = document.getElementById("task-container");
+
 //For Hours
 for(let i = 12; i > 0; i--){
     i = i < 10 ? "0" + i : i;
@@ -59,8 +61,25 @@ function setAlarm(){
     let time = `${selectedMenu[0].value}:${selectedMenu[1].value}:${selectedMenu[2].value} ${selectedMenu[3].value}`;
     if(time.includes("Hour") || time.includes("Minute") || time.includes("Second") || time.includes("AM/PM")){
         return alert("Please select a valid time to set Alarm clock");
+    }else{
+        let li = document.createElement("li");
+        li.innerHTML = time;
+        taskCotainer.appendChild(li);
+        //Adding delete button Functionality
+        let span = document.createElement("span");
+        span.innerHTML = "<img src='assets/cross.jpg' width=\'28px' height=\'28px'>";
+        li.appendChild(span);
     }
-    console.log(time);
 }
 
-setALarmButton.addEventListener("click", setAlarm)
+setALarmButton.addEventListener("click", setAlarm);
+
+taskCotainer.addEventListener("click",function(e){
+    if(e.target.tagName === "IMG"){
+        e.target.parentElement.parentElement.remove();
+    }
+}, false);
+
+
+
+

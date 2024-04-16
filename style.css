@@ -61,3 +61,30 @@ button:hover{
     color: #fff;
     transition: 0.5s;
 }
+
+/*Styling for the Alarm set*/
+ul li{
+    list-style: none;
+    font-size:25px;
+    padding: 12px 8px 12px 50px;
+    padding: 12px 8px 12px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    padding-left: 50px;
+    text-align: center;
+}
+
+ul li span img{
+    margin-top: 5px;
+    margin-left: 60px;
+}
