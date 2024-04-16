@@ -46,6 +46,10 @@ This is a simple alarm clock web application created using HTML, CSS, and Vanill
 ### If Invalid time selected and clicked on Set Alarm button then ALart will came
 ![image](https://github.com/allaboutraj/Alarm_clock/assets/49842899/984e5fff-6c4d-4e7b-b2b7-b4cdbc6afe18)
 
+### select the correct time and click on the Set Alarm button -> It will list down below
+![image](https://github.com/allaboutraj/Alarm_clock/assets/49842899/8bae4f3c-0ba2-4271-a6c6-3f0a871f2fbe)
+
+
 
 
 ## Contributing
